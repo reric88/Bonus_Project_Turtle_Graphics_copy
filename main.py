@@ -47,7 +47,6 @@ while game_is_on:
         player.reset_turtle_position()
         scoreboard.increase_level()
         car_manager.increase_speed()
-        # Make the speed increase at random
 
     for car in car_manager.all_cars:
         if check_collision(car, player):
