@@ -1,4 +1,5 @@
 from turtle import Turtle
+from playsound import playsound
 
 FONT = ('Courier', 24, 'normal')
 
@@ -36,6 +37,7 @@ class Scoreboard(Turtle):
     def stage_level(self):
         self.level += 1
         level = self.level
+        playsound('Sound/the-notification-email-143029.mp3')
         return level
     
     level_var = returned_level
